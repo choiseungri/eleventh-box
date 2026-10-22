@@ -18,6 +18,7 @@ let menuOpen=false,focusBefore=null;
 function save(){try{S.savedAt=Date.now();localStorage.setItem(KEY,JSON.stringify(S));saveOK=true;}catch{saveOK=false;}}
 function viewKey(v=S.view){return `${v.screen}:${v.room||v.asset||v.ending||v.author||''}`;}
 function navigate(view,push=true){
+ if(S.ending&&['preview','publications'].includes(view.screen))view={screen:'result'};
  scrollPositions[viewKey()]=$('screen').scrollTop;
  if(push){history.push({...S.view});if(history.length>40)history.shift();}
  S.view=view;S.locked=false;zoom=false;
@@ -187,6 +188,7 @@ document.addEventListener('visibilitychange',()=>{lastTick=performance.now();sav
 window.addEventListener('beforeunload',save);
 setInterval(()=>{const now=performance.now(),delta=now-lastTick;lastTick=now;if(document.hidden||menuOpen||(!S.pending&&!S.delivery))return;const nearBottom=$('screen').scrollHeight-$('screen').scrollTop-$('screen').clientHeight<100,old=S.notices.length;if(C.tick(S,delta)){render();if(nearBottom&&S.view.screen==='room'&&S.view.room===C.node(S)?.room)$('screen').scrollTop=$('screen').scrollHeight;observeVisible();announce(old);save();}elapsed+=delta;if(elapsed>800){save();elapsed=0;}},100);
 if(S.locked)S.view={screen:'lock'};
+if(S.ending&&['preview','publications'].includes(S.view.screen))S.view={screen:'result'};
 if(S.view.screen==='asset'&&!C.canOpen(S,S.view.asset))S.view={screen:'home'};
 render();if(S.view.screen==='room')$('screen').scrollTop=$('screen').scrollHeight;save();
 })();
