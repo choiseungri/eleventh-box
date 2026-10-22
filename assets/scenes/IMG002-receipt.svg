@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2200" viewBox="0 0 1600 2200" role="img" aria-label="달빛자료실 / 기증 인수 확인 / 인수번호 D-1107-10 / 2026.11.07 11:40 / 보내는 곳 모서리책방 / 접수 예정 10상자 / 실제 인수 10상자 / 목록 대조 완료 / 달빛자료실 자료관리. 접수. 오른쪽 위가 조금 접힌 종이.">
+<rect width="1600" height="2200" fill="#ddd8cc"/>
+<path d="M140 120H1330L1460 250V2060H140Z" fill="#fffef9"/>
+<path d="M1330 120V250H1460" fill="#e9e5db" stroke="#c5c0b6" stroke-width="2"/>
+<g fill="#302f2b" font-family="Noto Sans CJK KR,Noto Sans KR,Malgun Gothic,sans-serif">
+<text x="250" y="360" font-size="48">달빛자료실</text>
+<text x="250" y="475" font-size="78" font-weight="600">기증 인수 확인</text>
+<path d="M250 540H1320" stroke="#9f9b90" stroke-width="2"/>
+<text x="250" y="695" font-size="43">인수번호 D-1107-10</text>
+<text x="250" y="795" font-size="43">2026.11.07 11:40</text>
+<text x="250" y="1000" font-size="43">보내는 곳 모서리책방</text>
+<text x="250" y="1120" font-size="43">접수 예정 10상자</text>
+<text x="250" y="1240" font-size="43">실제 인수 10상자</text>
+<text x="250" y="1440" font-size="43">목록 대조 완료</text>
+<text x="250" y="1840" font-size="43">달빛자료실 자료관리</text>
+</g>
+<g stroke="#963e3c" fill="none" stroke-width="5"><rect x="1090" y="1720" width="180" height="180" rx="5"/><rect x="1102" y="1732" width="156" height="156" rx="3"/></g>
+<text x="1180" y="1835" text-anchor="middle" fill="#963e3c" font-family="Noto Serif CJK KR,Noto Serif KR,serif" font-size="56">접수</text>
+</svg>
